@@ -1,0 +1,410 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: pop-700;
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: open-sans;
+  src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  min-height: 100vh;
+  text-align: center;
+  font-weight: 400;
+  font-family: open-sans;
+  color: hsl(192, 100%, 9%);
+}
+body h1, body h2, body h3 {
+  font-family: pop-700;
+}
+body a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+}
+
+.fylo_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.fylo_ctn .fylo_heading {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.fylo_ctn .fylo_heading .logo_ctn {
+  width: 30vmax;
+  max-width: 200px;
+}
+.fylo_ctn .fylo_heading .hd_btn {
+  border: 1px solid hsl(321, 100%, 78%);
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  color: hsl(321, 100%, 78%);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.fylo_ctn .fylo_heading .hd_btn:hover {
+  opacity: 0.7;
+  box-shadow: 0rem 0.1rem 0.4rem currentColor;
+}
+.fylo_ctn .main_info {
+  display: grid;
+  gap: 3rem;
+}
+.fylo_ctn .main_info .main_section {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.fylo_ctn .main_info .main_section .main_title_review_ctn {
+  display: grid;
+  gap: 1rem;
+}
+.fylo_ctn .main_info .main_section .main_title_review_ctn .main_title {
+  font-size: 7vmin;
+}
+.fylo_ctn .main_info .main_section .main_title_review_ctn .main_review {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.fylo_ctn .main_info .main_section .btn_ctn {
+  padding: 2rem;
+}
+.fylo_ctn .main_info .main_section .btn_ctn .btn {
+  color: hsl(207, 100%, 98%);
+  background: hsl(322, 100%, 66%);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  box-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.219);
+}
+.fylo_ctn .main_info .main_section .btn_ctn .btn:hover {
+  background: hsl(321, 100%, 78%);
+}
+.fylo_ctn .main_info .stat_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.fylo_ctn .main_info .stat_section .huddle_img {
+  width: 95%;
+  max-width: 750px;
+}
+.fylo_ctn .main_info .stat_section .stats_ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.fylo_ctn .main_info .stat_section .stats_ctn .stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+.fylo_ctn .main_info .stat_section .stats_ctn .stats .stats_img_ctn {
+  width: 17%;
+}
+.fylo_ctn .main_info .stat_section .stats_ctn .stats .stat_fig {
+  font-family: open-sans;
+  font-size: 4rem;
+}
+.fylo_ctn .main_info .stat_section .stats_ctn .stats .stat_review {
+  color: hsl(192, 100%, 9%);
+  font-weight: 600;
+  color: darkgrey;
+}
+.fylo_ctn .fylo_section_ctn {
+  display: grid;
+  gap: 8rem;
+}
+.fylo_ctn .fylo_section_ctn img.media {
+  display: none;
+}
+.fylo_ctn .fylo_section_ctn .fylo_section .fylo_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem 2rem 3rem 2rem;
+  margin-top: -1rem;
+}
+.fylo_ctn .fylo_section_ctn .fylo_section .fylo_article .article_img {
+  width: 80%;
+}
+.fylo_ctn .fylo_section_ctn .fylo_section .fylo_article .article_review_ctn {
+  display: grid;
+  gap: 1rem;
+}
+.fylo_ctn .fylo_section_ctn .fylo_section .fylo_article .article_review_ctn .article_title {
+  font-size: 5vh;
+}
+.fylo_ctn .fylo_section_ctn .fylo_section .fylo_article .article_review_ctn .article_review {
+  font-weight: 600;
+}
+.fylo_ctn .fylo_section_ctn .grow_section .fylo_article, .fylo_ctn .fylo_section_ctn .user_section .fylo_article {
+  background: hsl(207, 100%, 98%);
+}
+.fylo_ctn .build_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  padding: 2rem;
+}
+.fylo_ctn .build_section .build_ctn {
+  display: grid;
+  gap: 2rem;
+}
+.fylo_ctn .build_section .build_ctn .btn_ctn {
+  padding: 0rem 2rem;
+}
+.fylo_ctn .build_section .build_ctn .btn_ctn .btn {
+  color: hsl(207, 100%, 98%);
+  background: hsl(322, 100%, 66%);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  box-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.219);
+}
+.fylo_ctn .build_section .build_ctn .btn_ctn .btn:hover {
+  background: hsl(321, 100%, 78%);
+}
+.fylo_ctn .fylo_footer {
+  color: hsl(207, 100%, 98%);
+}
+.fylo_ctn .fylo_footer img.media {
+  display: none;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 6rem;
+  background: hsl(192, 100%, 9%);
+  margin-top: -1rem;
+  padding: 5rem 2rem;
+  text-align: left;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section {
+  display: grid;
+  gap: 0.9rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_review {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn {
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form .email {
+  width: 95%;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: 0px;
+  outline: none;
+  font-family: open-sans;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form .email:focus-visible {
+  border: 1px solid hsl(0, 100%, 63%);
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form .email:focus-visible + .error_msg {
+  display: block;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form .error_msg {
+  color: hsl(0, 100%, 63%);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  display: none;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .btn_ctn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .btn_ctn .btn {
+  background: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .btn_ctn .btn:hover {
+  background: hsl(321, 100%, 78%);
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_heading .footer_img {
+  width: 40vmax;
+  max-width: 250px;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_heading .footer_review {
+  line-height: 1.5;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_holder {
+  display: grid;
+  gap: 1.5rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_holder .contact_ctn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  gap: 2rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .social_ctn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .social_ctn .social_link {
+  color: hsl(207, 100%, 98%);
+  font-size: 1.5rem;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .social_ctn .social_link:hover {
+  color: rgb(0, 0, 255);
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_footer .attribution {
+  font-size: 13px;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_footer .attribution a {
+  color: pink;
+  display: inline;
+}
+.fylo_ctn .fylo_footer .footer_section_ctn .contact_section .contact_footer .attribution a:hover {
+  text-decoration: 2px underline currentColor;
+  text-underline-offset: 0.2rem;
+}
+
+@media (width >= 750px) {
+  .fylo_ctn .fylo_heading {
+    padding: 3rem;
+  }
+  .fylo_ctn .main_info .main_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .fylo_ctn .main_info .main_section .main_title_review_ctn {
+    padding: 0rem 10rem;
+  }
+  .fylo_ctn .main_info .main_section .main_title_review_ctn .main_review {
+    padding: 0rem 12rem;
+  }
+  .fylo_ctn .main_info .main_section .btn_ctn .btn {
+    padding: 1rem 4rem;
+  }
+  .fylo_ctn .main_info .stat_section .stats_ctn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+  }
+  .fylo_ctn .main_info .stat_section .stats_ctn .different_stats .stat_review_ctn {
+    display: flex;
+  }
+  .fylo_ctn .fylo_section_ctn img.mobile {
+    display: none;
+  }
+  .fylo_ctn .fylo_section_ctn img.media {
+    display: block;
+  }
+  .fylo_ctn .fylo_section_ctn .fylo_section .fylo_article {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    text-align: left;
+    padding: 3rem 7rem;
+  }
+  .fylo_ctn .fylo_section_ctn .fylo_section .fylo_article .article_img {
+    min-width: 430px;
+  }
+  .fylo_ctn .fylo_section_ctn .flow_section .fylo_article {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .fylo_ctn .fylo_footer img.mobile {
+    display: none;
+  }
+  .fylo_ctn .fylo_footer img.media {
+    display: block;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    padding: 5rem;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section {
+    height: 25vh;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_title {
+    font-size: 1.5rem;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_review {
+    width: 60%;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form {
+    width: 90%;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .form .email {
+    padding: 1.1rem;
+  }
+  .fylo_ctn .fylo_footer .footer_section_ctn .form_section .form_btn_ctn .btn_ctn .btn {
+    padding: 1rem 3rem;
+  }
+}
